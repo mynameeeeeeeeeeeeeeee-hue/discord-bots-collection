@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: discord-bots-collection
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 zeeplin_bot.py
+    plan: free
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
