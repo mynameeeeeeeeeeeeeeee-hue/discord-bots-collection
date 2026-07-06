@@ -1,0 +1,14 @@
+run = "python3 zeeplin_bot.py"
+modules = ["python-3.11"]
+
+[env]
+PYTHONUNBUFFERED = "1"
+
+[packager]
+language = "python3"
+ignoredPaths = [".git"]
+
+[packager.features]
+packageSearch = true
+guessImports = true
+enableGuessImports = true
